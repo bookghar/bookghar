@@ -1,0 +1,17 @@
+mixin category(active)
+    .categories
+        a.category(href="/category/non-fiction", class=`${active === "non-fiction" ?"active":"" }` )
+            img.cat-icon(src="/img/bulb.png")
+            .cat-name Non-Fiction
+        a.category(href="/category/fiction", class=`${active === "fiction" ?"active":"" }`)
+            img.cat-icon(src="/img/fiction.png")
+            .cat-name Fiction
+        a.category(href="/category/motivation", class=`${active === "motivation" ?"active":"" }`)
+            img.cat-icon(src="/img/thunder.png")
+            .cat-name Motivation
+        a.category(href="/category/novel", class=`${active === "novel"?"active":"" }`)
+            img.cat-icon(src="/img/novel.png")
+            .cat-name Novel
+        a.category(href="/category/biography", class=`${active === "biography" ?"active":"" }`)
+            img.cat-icon(src="/img/user.png")
+            .cat-name Biography
